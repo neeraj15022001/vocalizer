@@ -9,5 +9,6 @@ speakButton.addEventListener("click", () => {
   } else {
     message.text = "Please write something";
   }
+  message.voice = speechSynthesis.getVoices()[49]
   window.speechSynthesis.speak(message);
 });
